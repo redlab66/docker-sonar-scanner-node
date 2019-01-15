@@ -67,7 +67,7 @@ analysis.sonar:
   PROJECT_ROOT: <The_path_to_the_source_code_to_scan>
  script:
   - cd ${PROJECT_ROOT}
-  - sonnar-scanner
+  - sonar-scanner
 ```
 
 ## TODO
