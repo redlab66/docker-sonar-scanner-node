@@ -38,7 +38,7 @@ You'll need to define variables :
 
 ```bash
 cd ${PROJECT_ROOT}
-sonnar-scanner
+sonar-scanner
 ```
 
 ## Advanced usage
