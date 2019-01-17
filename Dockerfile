@@ -18,7 +18,7 @@ RUN unzip /tmp/sonarscanner.zip -d /opt/                                        
  && ln -s /opt/sonar-scanner/bin/sonar-scanner-debug /usr/local/bin/
 
 
-ENV NODE_PATH "/usr/lib/node_modules/"
+ENV NODE_PATH "/usr/local/lib/node_modules/"
 
 # Define entrypoint
 COPY entrypoint.sh /entrypoint.sh
