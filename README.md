@@ -3,7 +3,7 @@
 
 Implementation of the sonar-scanner for node projects
 
-Image is actually hosted under `registry.gitlab.com/kirrk/utils/sonarscanner-node:latest` 
+Image is actually hosted under `redfabriq/sonar-scanner-node:latest` 
 
 ## Requirements
 
@@ -28,7 +28,7 @@ docker run                                                      \
   -e SONAR_LOGIN=${SONAR_LOGIN}                                 \
   -e SONAR_PASSWORD=${SONAR_PASSWORD}                           \
   -it                                                           \
-  registry.gitlab.com/kirrk/utils/sonarscanner-node:latest
+  redfabriq/sonar-scanner-node:latest
 ```
 
 ### Inside container
@@ -59,7 +59,7 @@ The following variables MUST be defined as **secret variables** in CI/CD configu
 
 analysis.sonar:
  stage: analysis
- image: registry.gitlab.com/kirrk/utils/sonarscanner-node:latest
+ image: redfabriq/sonar-scanner-node:latest
  only:
   refs:
    - master
